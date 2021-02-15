@@ -123,7 +123,6 @@ def random_search():
 
 
 if __name__ == '__main__':
-    # env = gym.make('SpaceInvaders-v0')
     env = gym.make('CartPole-v0')
     observation = env.reset()
 
@@ -132,20 +131,10 @@ if __name__ == '__main__':
 
     im = ax.imshow(first_frame)
 
-    # Show the buttons to control the initial state
-    # display_buttons()
-
-    # function that defines what happens when you click one of the buttons
-    frames = [first_frame]
-    # display_frames_as_gif(frames=frames, filename_gif='manual_play.gif')
-
     best_reward, best_params = random_search()
     frames = show_episode(env, best_params)
 
     display_frames_as_gif(frames, filename_gif='best_result_random.gif')
 
-    # for _ in range(10000000):
-    #     env.render()
-    #     env.step(env.action_space.sample())  # take a random action
 
     env.close()
