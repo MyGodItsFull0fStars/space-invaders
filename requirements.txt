@@ -1,1 +1,4 @@
 gym~=0.18.0
+numpy~=1.19.5
+ipywidgets~=7.6.3
+ipython~=7.16.1
