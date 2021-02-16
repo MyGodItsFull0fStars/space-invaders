@@ -8,6 +8,7 @@ from IPython.display import display
 from matplotlib import animation
 from JSAnimation.IPython_display import display_animation
 
+# Source: http://www.pinchofintelligence.com/getting-started-openai-gym/
 
 def left_click():
     """
